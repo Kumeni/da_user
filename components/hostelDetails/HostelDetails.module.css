@@ -1,0 +1,33 @@
+.container{
+    /* border: 1px solid black; */
+    width:max-content;
+}
+
+.container > div{
+    margin-top:2rem;
+}
+
+.details{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows:auto auto;
+    border:1px solid rgb(210, 210, 210);
+}
+
+.details > span{
+    padding:0.5rem;
+}
+.details > span:nth-of-type(even){
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.images{
+    width:400px;
+}
+
+.images > img{
+    width: 100%;
+    height: 100%;
+}

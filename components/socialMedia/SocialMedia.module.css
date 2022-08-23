@@ -8,6 +8,7 @@
     /* bottom:7rem; */
     top:0rem;
     right:5rem;
+    z-index: -1;
     height:100%;
     align-content: center;
 }

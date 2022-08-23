@@ -11,41 +11,19 @@ import SocialMedia from '../components/socialMedia/SocialMedia';
 import Events from '../components/events/Events';
 import AvailableRooms from '../components/availableRooms/AvailableRooms';
 import Footer from '../components/footer/Footer';
+import { unauthorizedGet } from '../utilities/api';
 
 export default function Home(props) {
 
-	const landing = useRef(null);
-	const header = useRef(null);
-	const [landingContent, setLandingContent] = useState()
-
-	const [height, setHeight] = useState();
-
+	const [rooms ,setRooms] = useState();
 
 	useEffect(()=>{
-		console.log(landingContent);
-	}, [landingContent])
-
-	const handleLandingHeight = () => {
-		if(landing.current !== null && header.current !== null){
-			let windowHeight = window.innerHeight, headerHeight = header.current.getBoundingClientRect().height;
-			//console.log((windowHeight - headerHeight)+1 + "px");
-			landing.current.style.height = (windowHeight - headerHeight)+1 + "px";
-			setHeight((windowHeight - headerHeight)+1 + "px");
+		if(rooms == undefined){
+			unauthorizedGet(props.server, '/api/rooms')
+			.then( res => setRooms(res.data.data))
+			.catch( err => console.log(err));
 		}
-	}
-
-	useEffect(()=>{
-		if(landing.current !== null && header.current !== null){
-			handleLandingHeight();
-			
-			document.addEventListener( "load", event => {
-				handleLandingHeight();
-			})
-			window.addEventListener( "resize", event => {
-				handleLandingHeight();
-			})
-		}
-	}, [landing, header])
+	}, [rooms])
 
 	return (
 		<div className={styles.container}>
@@ -58,7 +36,10 @@ export default function Home(props) {
 						need to make their lives more easier.
 					"
 				/>
-				<meta name = "theme-color" content = "white" />
+				<meta 
+					name = "theme-color" 
+					content = "white" 
+				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
@@ -71,7 +52,9 @@ export default function Home(props) {
 					<Events />
 				</Section>
 				<Section>
-					<AvailableRooms />
+					<AvailableRooms 
+						rooms = {rooms}
+					/>
 				</Section>
 			</Sections>
 			<SocialMedia />

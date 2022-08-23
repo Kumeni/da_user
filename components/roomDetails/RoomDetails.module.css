@@ -1,0 +1,80 @@
+.container{
+    padding:2rem;
+    /* border:1px solid black; */
+}
+
+.container > p, .rentInclusives > p, .requiredGender p{
+    font-size:1.2rem;
+}
+
+.rentTabs{
+    margin-top: 1rem;
+    /* border:1px solid black; */
+}
+
+.rentTabs > span{
+    padding:0.5rem 1rem;
+    border:1px solid green;
+    display:inline-block;
+    margin-right:0.5rem;
+}
+
+.rentTabs > span > input{
+    /* opacity:0; */
+}
+
+.rent{
+    /* border:1px solid black; */
+    padding-top:0.5rem;
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns:100px auto;
+    grid-template-rows:auto auto;
+    margin-left:0.5rem;
+}
+
+.rent span{
+    padding:0.5rem 1rem;
+    font-weight:600;
+}
+
+.rentInclusives{
+    /* border:1px solid black; */
+    margin:1rem auto;
+}
+
+.rentInclusives > div > span{
+    padding:0.5rem 1rem;
+    display:inline-block;
+    border:1px solid rgb(210, 210, 210);
+    margin:0.5rem 0.5rem 0rem 0rem;
+}
+
+.rentInclusives > div > span > label{
+    display:inline-block;
+    margin-right:0.4rem;
+}
+
+.requiredGender{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 160px auto;
+    grid-template-rows:auto;
+    align-content:center;
+    margin-top: 1.2rem;
+    /* border: 1px solid black; */
+}
+
+.requiredGender > p{
+    align-self: center;
+}
+
+.requiredGender > span{
+    display: inline-block;
+    padding:0.2rem 1rem;
+    border:1px solid rgb(210, 210, 210);
+    font-size:1.2rem;
+    width:max-content;
+}

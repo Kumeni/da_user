@@ -63,3 +63,57 @@ p, a, li{
 ::-webkit-scrollbar-button{
   display:none;
 }
+
+/* Bootstrap styling */
+.text-white{
+  color:white;
+}
+.text-danger{
+  color:#ff4444;
+}
+.text-warning{
+  color:#ffbb33;
+}
+.text-success{
+  color:#00C851;
+}
+.text-info{
+  color:#33b5e5;
+}
+.text-default{
+  color:#2BBBAD;
+}
+.text-primary{
+  color:#4285F4;
+}
+.text-secondary{
+  color:#aa66cc;
+}
+.text-gray{
+  color:gray;
+}
+
+.bg-danger{
+  background-color:#ff4444;
+}
+.bg-warning{
+  background-color:#ffbb33;
+}
+.bg-success{
+  background-color:#00C851;
+}
+.bg-info{
+  background-color:#33b5e5;
+}
+.bg-default{
+  background-color:#2BBBAD;
+}
+.bg-primary{
+  background-color:#4285F4;
+}
+.bg-primary:hover{
+  background-color:#3a72cc;
+}
+.bg-secondary{
+  background-color:#aa66cc;
+}

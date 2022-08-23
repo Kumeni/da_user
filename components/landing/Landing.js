@@ -16,7 +16,8 @@ function Landing() {
                 {/* <Link href="/"><a>Products and services</a></Link> */}
                 <Link href="/available-rooms"><a>Available rooms</a></Link>
             </ul>
-            <p><em>"Connection == Information" ~ Samson</em></p>
+            {/* <p><em>"Connection == Information" ~ Samson</em></p> */}
+            <p><em>"Here to serve you"</em></p>
         </div>
     </div>
   )

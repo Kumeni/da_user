@@ -1,0 +1,65 @@
+.introduction{
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns: 50% 50%;
+    padding-top:6rem;
+    justify-content:center;
+    max-width:1200px;
+    margin:auto;
+}
+
+.introduction > div:first-of-type, .landlord > div:first-of-type{
+    justify-self: right;
+}
+
+.images{
+    width:500px;    
+}
+
+.images > img{
+    width:100%;
+    height:100%;
+    border:1px solid rgb(210, 210, 210);
+}
+
+.landlord{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 400px auto;
+    justify-content:center;
+    align-content:center;
+    max-width:1000px;
+    margin: 2rem auto;
+    /* border: 1px solid black; */
+}
+
+.fromLandlord{
+    /* border:1px solid black; */
+    padding-left:3rem;
+}
+
+.fromLandlord > h4{
+    font-size: 1.2rem;
+    font-weight:600;
+    margin-bottom:1rem;
+}
+.fromLandlord > p{
+    font-size: 1.1rem;
+}
+
+.hostel{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 400px auto;
+    justify-content:center;
+    align-content:center;
+    max-width:1000px;
+    margin:2rem auto;
+}
+
+.more{
+    text-align: center;
+}

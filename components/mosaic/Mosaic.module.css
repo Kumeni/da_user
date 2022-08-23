@@ -11,3 +11,8 @@
     padding-top:4rem;
     padding-bottom:4rem;
 }
+
+.mosaic > div{
+    position: relative;
+    margin-right:0.5rem;
+}

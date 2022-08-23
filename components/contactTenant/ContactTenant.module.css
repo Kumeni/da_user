@@ -1,0 +1,85 @@
+.container{
+    /* border: 1px solid rgb(210, 210, 210); */
+    width:max-content;
+}
+
+.container > div:first-of-type{
+    display: grid;
+    display: -ms-grid;
+    display:-moz-grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    /* border:1px solid black; */
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.title > label{
+    font-size:1.1rem;
+    font-weight:600;
+    /* border:1px solid black; */
+}
+.more > div{
+    width:4px;
+    height:4px;
+    border-radius:2px;
+    background-color:black;
+    margin:0.1rem auto;
+}
+
+.more{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: max-content;
+    padding: 0.2rem 0.7rem;
+
+}
+
+.more:hover{
+    border-color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+.icon{
+    /* border:1px solid black; */
+    width:40px;
+    height:40px;
+    margin: 1rem auto 0.5rem auto;
+}
+
+.icon img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    -o-object-fit: contain;
+    object-position: center;
+    -o-object-position: center;
+}
+
+.detailed{
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto auto auto;
+}
+
+.notDetailed{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows:auto;
+}
+
+.notDetailed > a:not(:first-of-type){
+    border-left:1px solid rgb(210, 210, 210);
+}
+
+/* .netDetailed > a, .detailed > div{
+   
+} */
+
+.anchorText{
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin: 0rem auto 0.5rem auto;
+}

@@ -13,7 +13,7 @@ function Header() {
           <span>
             {
               router.pathname!=="/" &&
-                <button className={style.icon}><img src="/icons/back.png" alt="back icon" /></button>
+                <button onClick={event=> router.back()} className={style.icon}><img src="/icons/back.png" alt="back icon" /></button>
             }
             <Link href="/">
               <div className={style.logo}>

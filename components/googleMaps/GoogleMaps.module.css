@@ -1,0 +1,26 @@
+.container{
+    width:600px;
+    align-content:center;
+    height:max-content;
+    margin:auto 0rem auto 2rem;
+    /* border:1px solid black; */
+}
+.container > iframe{
+    width:600px;
+    height:300px;
+    border:1px solid rgb(210, 210, 210);
+    display:block;
+}
+.container > h4{
+    font-weight:600;
+    font-size:1.2rem;
+    margin:1rem 1rem;
+}
+
+.container a{
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin:1rem 0rem;
+    /* border: 1px solid black; */
+}
